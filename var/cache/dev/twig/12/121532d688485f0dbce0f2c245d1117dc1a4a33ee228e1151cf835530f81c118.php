@@ -98,6 +98,6 @@ class __TwigTemplate_6917579cd0725a3b095ce2e2637f81564a3e03578c8dfe020d312bcec20
         </div>
     </div>
 </div>
-", "WebProfilerBundle:Profiler:header.html.twig", "/var/www/html/VueSymfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/header.html.twig");
+", "WebProfilerBundle:Profiler:header.html.twig", "/var/www/html/vue/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/header.html.twig");
     }
 }

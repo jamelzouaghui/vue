@@ -60,6 +60,6 @@ class __TwigTemplate_b3c191febb023f62a420921babb36e391fb98eb55921b499cb83ca3d682
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/button_label.html.php", "/var/www/html/VueSymfony/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views/Form/button_label.html.php");
+        return new Source("", "@Framework/Form/button_label.html.php", "/var/www/html/vue/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views/Form/button_label.html.php");
     }
 }

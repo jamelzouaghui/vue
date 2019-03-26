@@ -1,27 +1,41 @@
 <?php
-// src/SpineSys/UserBundle/Entity/User.php
 
-namespace SpineSys\UserBundle\Entity;
+namespace Spine\UserBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
+
+
 /**
- * @ORM\Entity
+ * User
+ *
  * @ORM\Table(name="nl_user")
+ * @ORM\Entity()
  */
-class User extends BaseUser
+class User  extends BaseUser
 {
     /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
      * @ORM\Id
-     * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
 
-    public function __construct()
+    
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
     {
-        parent::__construct();
-        // your own logic
+        return $this->id;
     }
+
+    
 }

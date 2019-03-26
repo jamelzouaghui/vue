@@ -202,6 +202,6 @@ class __TwigTemplate_6c0854c0467c2f5a227f54c2518c4c68de9fa8c945fdca178f4fccdf902
         </div>
     </body>
 </html>
-", "@FOSUser/layout.html.twig", "/var/www/html/VueSymfony/vendor/friendsofsymfony/user-bundle/Resources/views/layout.html.twig");
+", "@FOSUser/layout.html.twig", "/var/www/html/vue/vendor/friendsofsymfony/user-bundle/Resources/views/layout.html.twig");
     }
 }

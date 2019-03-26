@@ -76,6 +76,6 @@ class __TwigTemplate_66bddcd0b79b5b059e0fe37f69dff93a5f1fdda9b9e9df057fe3294c0cf
         <?php endforeach; ?>
     </ul>
 <?php endif ?>
-", "@Framework/Form/form_errors.html.php", "/var/www/html/VueSymfony/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views/Form/form_errors.html.php");
+", "@Framework/Form/form_errors.html.php", "/var/www/html/vue/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views/Form/form_errors.html.php");
     }
 }

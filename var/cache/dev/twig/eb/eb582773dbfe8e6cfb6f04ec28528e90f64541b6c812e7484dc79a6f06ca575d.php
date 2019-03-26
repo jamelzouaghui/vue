@@ -1680,6 +1680,6 @@ class __TwigTemplate_2a09d00ddcb4c31630e2a4e89da15823153a069f368f79b5aece81ef9f3
         </tbody>
     </table>
 {% endmacro %}
-", "DoctrineBundle:Collector:db.html.twig", "/var/www/html/VueSymfony/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "DoctrineBundle:Collector:db.html.twig", "/var/www/html/vue/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

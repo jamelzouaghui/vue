@@ -228,6 +228,6 @@ class __TwigTemplate_73d18fd03f44f5a094cb268c37494323eaeaaaed3361d6e60f300e71a41
         </div>
     </form>
 </div>
-", "WebProfilerBundle:Profiler:search.html.twig", "/var/www/html/VueSymfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/search.html.twig");
+", "WebProfilerBundle:Profiler:search.html.twig", "/var/www/html/vue/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/search.html.twig");
     }
 }

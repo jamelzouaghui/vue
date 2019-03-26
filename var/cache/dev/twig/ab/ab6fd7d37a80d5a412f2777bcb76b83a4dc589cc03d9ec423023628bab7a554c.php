@@ -265,6 +265,6 @@ class __TwigTemplate_a0d9b36711c4487a2377dd611864949aafd3e2f8c7a4bb93f5bb7cfeb50
     }
 </style>
 {% endblock %}
-", ":default:index.html.twig", "/var/www/html/VueSymfony/app/Resources/views/default/index.html.twig");
+", ":default:index.html.twig", "/var/www/html/vue/app/Resources/views/default/index.html.twig");
     }
 }

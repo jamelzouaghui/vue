@@ -173,6 +173,6 @@ class __TwigTemplate_5765967f8f0520110838164105ffe1795737d8b2d91d20620c2dda7d913
         {% endif %}
     </div>
 {% endblock %}
-", "WebProfilerBundle:Profiler:open.html.twig", "/var/www/html/VueSymfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/open.html.twig");
+", "WebProfilerBundle:Profiler:open.html.twig", "/var/www/html/vue/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/open.html.twig");
     }
 }

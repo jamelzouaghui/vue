@@ -179,6 +179,6 @@ class __TwigTemplate_9c9489f005db9070bac3a47b868b59762a7d880d505a65407384f1aec45
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/var/www/html/VueSymfony/app/Resources/views/base.html.twig");
+", "base.html.twig", "/var/www/html/vue/app/Resources/views/base.html.twig");
     }
 }

@@ -77,7 +77,7 @@ sensio_framework_extra:
 fos_user:
     db_driver: orm # other valid values are 'mongodb' and 'couchdb'
     firewall_name: main
-    user_class: SpineSys\UserBundle\Entity\User
+    user_class: Spine\UserBundle\Entity\User
     service:                               # this lines
         mailer: fos_user.mailer.twig_swift
     from_email:

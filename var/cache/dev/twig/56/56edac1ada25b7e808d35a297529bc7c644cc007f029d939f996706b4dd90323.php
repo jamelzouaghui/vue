@@ -221,6 +221,6 @@ a.doc:hover {
     top: -7em;
     visibility: hidden;
 }
-", "WebProfilerBundle:Profiler:open.css.twig", "/var/www/html/VueSymfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/open.css.twig");
+", "WebProfilerBundle:Profiler:open.css.twig", "/var/www/html/vue/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/open.css.twig");
     }
 }

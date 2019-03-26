@@ -96,6 +96,6 @@ class __TwigTemplate_3ac8f79fe1f79f73bf2f56767c31df0b06ac5ce494c87671f1bdd32d99a
 {% block fos_user_content %}
 {% include \"@FOSUser/Group/new_content.html.twig\" %}
 {% endblock fos_user_content %}
-", "FOSUserBundle:Group:new.html.twig", "/var/www/html/VueSymfony/vendor/friendsofsymfony/user-bundle/Resources/views/Group/new.html.twig");
+", "FOSUserBundle:Group:new.html.twig", "/var/www/html/vue/vendor/friendsofsymfony/user-bundle/Resources/views/Group/new.html.twig");
     }
 }

@@ -64,6 +64,6 @@ class __TwigTemplate_2a894da621b87e7a9d82c5e86332b73af0e05495eb3683d0c5e29d0cc0e
     public function getSourceContext()
     {
         return new Source("Hello World!
-", "UserBundle:Default:index.html.twig", "/var/www/html/VueSymfony/src/Spine/UserBundle/Resources/views/Default/index.html.twig");
+", "UserBundle:Default:index.html.twig", "/var/www/html/vue/src/Spine/UserBundle/Resources/views/Default/index.html.twig");
     }
 }

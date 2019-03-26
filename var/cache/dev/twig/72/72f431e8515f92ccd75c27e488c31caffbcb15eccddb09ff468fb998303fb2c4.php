@@ -471,6 +471,6 @@ class __TwigTemplate_a98b245c7f951805d7c9837d9acdbfc16b6cdbf1689b72c3c126648ef5f
         </div>
     {% endfor %}
 {% endblock %}
-", "WebProfilerBundle:Collector:validator.html.twig", "/var/www/html/VueSymfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/validator.html.twig");
+", "WebProfilerBundle:Collector:validator.html.twig", "/var/www/html/vue/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/validator.html.twig");
     }
 }

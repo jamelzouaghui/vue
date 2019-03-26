@@ -110,6 +110,6 @@ class __TwigTemplate_b7f9d9b0ce207c0ca0c7c18cd625142202626a9ebebc20b37fd60a98a02
         </div>
     </body>
 </html>
-", "TwigBundle:Exception:error.html.twig", "/var/www/html/VueSymfony/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views/Exception/error.html.twig");
+", "TwigBundle:Exception:error.html.twig", "/var/www/html/vue/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views/Exception/error.html.twig");
     }
 }
