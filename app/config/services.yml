@@ -33,3 +33,8 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+    
+    
+    hello_service:
+        class: Spine\UserBundle\Services\HelloService
+        arguments: [@mailer]
