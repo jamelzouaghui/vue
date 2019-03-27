@@ -48,19 +48,19 @@ class __TwigTemplate_9c9489f005db9070bac3a47b868b59762a7d880d505a65407384f1aec45
         ";
         // line 6
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 7
+        // line 11
         echo "        <link rel=\"icon\" type=\"image/x-icon\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("favicon.ico"), "html", null, true);
         echo "\" />
     </head>
     <body>
         ";
-        // line 10
+        // line 14
         $this->displayBlock('body', $context, $blocks);
-        // line 11
+        // line 17
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 12
+        // line 21
         echo "    </body>
 </html>
 ";
@@ -99,6 +99,14 @@ class __TwigTemplate_9c9489f005db9070bac3a47b868b59762a7d880d505a65407384f1aec45
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
+        // line 7
+        echo "            
+          <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 8
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("build/app.css"), "html", null, true);
+        echo "\" />  
+        
+        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -107,7 +115,7 @@ class __TwigTemplate_9c9489f005db9070bac3a47b868b59762a7d880d505a65407384f1aec45
 
     }
 
-    // line 10
+    // line 14
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
@@ -116,6 +124,9 @@ class __TwigTemplate_9c9489f005db9070bac3a47b868b59762a7d880d505a65407384f1aec45
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
+        // line 15
+        echo "        
+        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -124,7 +135,7 @@ class __TwigTemplate_9c9489f005db9070bac3a47b868b59762a7d880d505a65407384f1aec45
 
     }
 
-    // line 11
+    // line 17
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
@@ -133,6 +144,15 @@ class __TwigTemplate_9c9489f005db9070bac3a47b868b59762a7d880d505a65407384f1aec45
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
+        // line 18
+        echo "         <script src=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("build/app.js"), "html", null, true);
+        echo "\" ></script>
+         <script src=\"";
+        // line 19
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("build/Vue.js"), "html", null, true);
+        echo "\" ></script>
+        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -153,7 +173,7 @@ class __TwigTemplate_9c9489f005db9070bac3a47b868b59762a7d880d505a65407384f1aec45
 
     public function getDebugInfo()
     {
-        return array (  128 => 11,  111 => 10,  94 => 6,  76 => 5,  64 => 12,  61 => 11,  59 => 10,  52 => 7,  50 => 6,  46 => 5,  40 => 1,);
+        return array (  153 => 19,  148 => 18,  139 => 17,  128 => 15,  119 => 14,  106 => 8,  103 => 7,  94 => 6,  76 => 5,  64 => 21,  61 => 17,  59 => 14,  52 => 11,  50 => 6,  46 => 5,  40 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -171,12 +191,21 @@ class __TwigTemplate_9c9489f005db9070bac3a47b868b59762a7d880d505a65407384f1aec45
     <head>
         <meta charset=\"UTF-8\" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            
+          <link rel=\"stylesheet\" type=\"text/css\" href=\"{{asset('build/app.css')}}\" />  
+        
+        {% endblock %}
         <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('favicon.ico') }}\" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block body %}
+        
+        {% endblock %}
+        {% block javascripts %}
+         <script src=\"{{asset('build/app.js')}}\" ></script>
+         <script src=\"{{asset('build/Vue.js')}}\" ></script>
+        {% endblock %}
     </body>
 </html>
 ", "base.html.twig", "/var/www/html/vue/app/Resources/views/base.html.twig");
