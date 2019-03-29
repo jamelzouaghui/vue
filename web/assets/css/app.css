@@ -1,4 +1,6 @@
 /* assets/css/app.css */
+
+/*@import '~bootstrap-sass/assets/stylesheets/bootstrap';*/
 body {
     background-color: lightgray;
 }
