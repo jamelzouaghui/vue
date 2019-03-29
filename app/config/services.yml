@@ -37,4 +37,4 @@ services:
     
     hello_service:
         class: Spine\UserBundle\Services\HelloService
-        arguments: [@mailer]
+        arguments: ['@mailer']

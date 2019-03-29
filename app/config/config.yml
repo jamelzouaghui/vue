@@ -21,6 +21,8 @@ framework:
     csrf_protection: ~
     validation: { enable_annotations: true }
     #serializer: { enable_annotations: true }
+    serializer:
+        enabled: true
     default_locale: '%locale%'
     trusted_hosts: ~
     session:
@@ -83,3 +85,15 @@ fos_user:
     from_email:
         address: "%mailer_user%"
         sender_name: "%mailer_user%"
+        
+
+fos_rest:
+    body_converter:
+        enabled: true
+    view:
+        formats: { json: true, xml: false, rss: false }
+    serializer:
+        serialize_null: true
+        
+sensio_framework_extra:
+    view: { annotations: false }

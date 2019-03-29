@@ -107,6 +107,18 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        // spine_user_contact_getcontacts
+        if ('/contact' === $pathinfo) {
+            $ret = array (  '_controller' => 'Spine\\UserBundle\\Controller\\ContactController::getContactsAction',  '_route' => 'spine_user_contact_getcontacts',);
+            if (!in_array($canonicalMethod, ['GET'])) {
+                $allow = array_merge($allow, ['GET']);
+                goto not_spine_user_contact_getcontacts;
+            }
+
+            return $ret;
+        }
+        not_spine_user_contact_getcontacts:
+
         // spine_user_default_index
         if ('/page1' === $pathinfo) {
             return array (  '_controller' => 'Spine\\UserBundle\\Controller\\DefaultController::indexAction',  '_route' => 'spine_user_default_index',);
@@ -157,6 +169,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
             not_fos_user_change_password:
 
+        }
+
+        // spine_user_soap_indexsoap
+        if ('/soap' === $pathinfo) {
+            return array (  '_controller' => 'Spine\\UserBundle\\Controller\\SoapController::indexSoapAction',  '_route' => 'spine_user_soap_indexsoap',);
         }
 
         // homepage
