@@ -104,6 +104,7 @@ return [
     'argument_resolver.session' => true,
     'argument_resolver.variadic' => true,
     'assets._default_package' => true,
+    'assets._version__default' => true,
     'assets.context' => true,
     'assets.empty_package' => true,
     'assets.empty_version_strategy' => true,

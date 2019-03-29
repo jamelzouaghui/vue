@@ -249,4 +249,3 @@ class Contact
         return $this->profession;
     }
 }
-

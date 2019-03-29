@@ -107,67 +107,97 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        // spine_user_contact_getcontacts
-        if ('/contact' === $pathinfo) {
-            $ret = array (  '_controller' => 'Spine\\UserBundle\\Controller\\ContactController::getContactsAction',  '_route' => 'spine_user_contact_getcontacts',);
-            if (!in_array($canonicalMethod, ['GET'])) {
-                $allow = array_merge($allow, ['GET']);
-                goto not_spine_user_contact_getcontacts;
-            }
-
-            return $ret;
-        }
-        not_spine_user_contact_getcontacts:
-
-        // spine_user_default_index
-        if ('/page1' === $pathinfo) {
-            return array (  '_controller' => 'Spine\\UserBundle\\Controller\\DefaultController::indexAction',  '_route' => 'spine_user_default_index',);
-        }
-
-        if (0 === strpos($pathinfo, '/profile')) {
-            // fos_user_profile_show
-            if ('/profile' === $trimmedPathinfo) {
-                $ret = array (  '_controller' => 'fos_user.profile.controller:showAction',  '_route' => 'fos_user_profile_show',);
-                if ('/' === substr($pathinfo, -1)) {
-                    // no-op
-                } elseif ('GET' !== $canonicalMethod) {
-                    goto not_fos_user_profile_show;
-                } else {
-                    return array_replace($ret, $this->redirect($rawPathinfo.'/', 'fos_user_profile_show'));
-                }
-
+        elseif (0 === strpos($pathinfo, '/contact')) {
+            // spine_user_contact_getcontacts
+            if ('/contact' === $pathinfo) {
+                $ret = array (  '_controller' => 'Spine\\UserBundle\\Controller\\ContactController::getContactsAction',  '_route' => 'spine_user_contact_getcontacts',);
                 if (!in_array($canonicalMethod, ['GET'])) {
                     $allow = array_merge($allow, ['GET']);
-                    goto not_fos_user_profile_show;
+                    goto not_spine_user_contact_getcontacts;
                 }
 
                 return $ret;
             }
-            not_fos_user_profile_show:
+            not_spine_user_contact_getcontacts:
 
-            // fos_user_profile_edit
-            if ('/profile/edit' === $pathinfo) {
-                $ret = array (  '_controller' => 'fos_user.profile.controller:editAction',  '_route' => 'fos_user_profile_edit',);
-                if (!in_array($canonicalMethod, ['GET', 'POST'])) {
-                    $allow = array_merge($allow, ['GET', 'POST']);
-                    goto not_fos_user_profile_edit;
+            // spine_user_project_getcontacts
+            if ('/contact' === $pathinfo) {
+                $ret = array (  '_controller' => 'Spine\\UserBundle\\Controller\\ProjectController::getContactsAction',  '_route' => 'spine_user_project_getcontacts',);
+                if (!in_array($canonicalMethod, ['GET'])) {
+                    $allow = array_merge($allow, ['GET']);
+                    goto not_spine_user_project_getcontacts;
                 }
 
                 return $ret;
             }
-            not_fos_user_profile_edit:
+            not_spine_user_project_getcontacts:
 
-            // fos_user_change_password
-            if ('/profile/change-password' === $pathinfo) {
-                $ret = array (  '_controller' => 'fos_user.change_password.controller:changePasswordAction',  '_route' => 'fos_user_change_password',);
-                if (!in_array($canonicalMethod, ['GET', 'POST'])) {
-                    $allow = array_merge($allow, ['GET', 'POST']);
-                    goto not_fos_user_change_password;
+        }
+
+        elseif (0 === strpos($pathinfo, '/p')) {
+            // spine_user_default_index
+            if ('/page1' === $pathinfo) {
+                return array (  '_controller' => 'Spine\\UserBundle\\Controller\\DefaultController::indexAction',  '_route' => 'spine_user_default_index',);
+            }
+
+            // project
+            if ('/projects' === $pathinfo) {
+                $ret = array (  '_controller' => 'Spine\\UserBundle\\Controller\\ProjectController::index',  '_route' => 'project',);
+                if (!in_array($canonicalMethod, ['GET'])) {
+                    $allow = array_merge($allow, ['GET']);
+                    goto not_project;
                 }
 
                 return $ret;
             }
-            not_fos_user_change_password:
+            not_project:
+
+            if (0 === strpos($pathinfo, '/profile')) {
+                // fos_user_profile_show
+                if ('/profile' === $trimmedPathinfo) {
+                    $ret = array (  '_controller' => 'fos_user.profile.controller:showAction',  '_route' => 'fos_user_profile_show',);
+                    if ('/' === substr($pathinfo, -1)) {
+                        // no-op
+                    } elseif ('GET' !== $canonicalMethod) {
+                        goto not_fos_user_profile_show;
+                    } else {
+                        return array_replace($ret, $this->redirect($rawPathinfo.'/', 'fos_user_profile_show'));
+                    }
+
+                    if (!in_array($canonicalMethod, ['GET'])) {
+                        $allow = array_merge($allow, ['GET']);
+                        goto not_fos_user_profile_show;
+                    }
+
+                    return $ret;
+                }
+                not_fos_user_profile_show:
+
+                // fos_user_profile_edit
+                if ('/profile/edit' === $pathinfo) {
+                    $ret = array (  '_controller' => 'fos_user.profile.controller:editAction',  '_route' => 'fos_user_profile_edit',);
+                    if (!in_array($canonicalMethod, ['GET', 'POST'])) {
+                        $allow = array_merge($allow, ['GET', 'POST']);
+                        goto not_fos_user_profile_edit;
+                    }
+
+                    return $ret;
+                }
+                not_fos_user_profile_edit:
+
+                // fos_user_change_password
+                if ('/profile/change-password' === $pathinfo) {
+                    $ret = array (  '_controller' => 'fos_user.change_password.controller:changePasswordAction',  '_route' => 'fos_user_change_password',);
+                    if (!in_array($canonicalMethod, ['GET', 'POST'])) {
+                        $allow = array_merge($allow, ['GET', 'POST']);
+                        goto not_fos_user_change_password;
+                    }
+
+                    return $ret;
+                }
+                not_fos_user_change_password:
+
+            }
 
         }
 

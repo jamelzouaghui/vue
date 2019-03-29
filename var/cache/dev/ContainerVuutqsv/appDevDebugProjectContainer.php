@@ -1,6 +1,6 @@
 <?php
 
-namespace ContainerDddiyku;
+namespace ContainerVuutqsv;
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -725,7 +725,7 @@ class appDevDebugProjectContainer extends Container
             include_once $this->targetDirs[3].'/vendor/symfony/symfony/src/Symfony/Component/Asset/Package.php';
             include_once $this->targetDirs[3].'/vendor/symfony/symfony/src/Symfony/Component/Asset/PathPackage.php';
             include_once $this->targetDirs[3].'/vendor/symfony/symfony/src/Symfony/Component/Asset/VersionStrategy/VersionStrategyInterface.php';
-            include_once $this->targetDirs[3].'/vendor/symfony/symfony/src/Symfony/Component/Asset/VersionStrategy/EmptyVersionStrategy.php';
+            include_once $this->targetDirs[3].'/vendor/symfony/symfony/src/Symfony/Component/Asset/VersionStrategy/JsonManifestVersionStrategy.php';
             include_once $this->targetDirs[3].'/vendor/symfony/symfony/src/Symfony/Component/Asset/Context/ContextInterface.php';
             include_once $this->targetDirs[3].'/vendor/symfony/symfony/src/Symfony/Component/Asset/Context/RequestStackContext.php';
             include_once $this->targetDirs[3].'/vendor/symfony/symfony/src/Symfony/Component/Templating/TemplateNameParserInterface.php';
@@ -1273,7 +1273,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getAssets_PackagesService()
     {
-        return $this->services['assets.packages'] = new \Symfony\Component\Asset\Packages(new \Symfony\Component\Asset\PathPackage('', new \Symfony\Component\Asset\VersionStrategy\EmptyVersionStrategy(), ${($_ = isset($this->services['assets.context']) ? $this->services['assets.context'] : $this->getAssets_ContextService()) && false ?: '_'}), []);
+        return $this->services['assets.packages'] = new \Symfony\Component\Asset\Packages(new \Symfony\Component\Asset\PathPackage('', new \Symfony\Component\Asset\VersionStrategy\JsonManifestVersionStrategy(($this->targetDirs[3].'/web/build/manifest.json')), ${($_ = isset($this->services['assets.context']) ? $this->services['assets.context'] : $this->getAssets_ContextService()) && false ?: '_'}), []);
     }
 
     /**
