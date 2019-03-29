@@ -12,7 +12,10 @@ Encore
 
     // will output as web/build/app.js
     .addEntry('app', './web/assets/js/main.js')
-    .addEntry('Vue', './web/assets/js/vue.js')
+    .addEntry('Vue', './web/assets/js/app.js')
+
+
+    
 
     // will output as web/build/global.css
      .enableVueLoader()

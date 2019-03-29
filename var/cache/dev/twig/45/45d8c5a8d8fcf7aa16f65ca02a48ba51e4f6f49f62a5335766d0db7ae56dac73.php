@@ -59,6 +59,7 @@ class __TwigTemplate_2a894da621b87e7a9d82c5e86332b73af0e05495eb3683d0c5e29d0cc0e
         // line 5
         echo "    <div id=\"app\">
        \${message}
+       <hello></hello>
     </div>
 
 ";
@@ -101,6 +102,7 @@ class __TwigTemplate_2a894da621b87e7a9d82c5e86332b73af0e05495eb3683d0c5e29d0cc0e
 {% block body %}
     <div id=\"app\">
        \${message}
+       <hello></hello>
     </div>
 
 {% endblock %}", "UserBundle:Default:index.html.twig", "/var/www/html/vue/src/Spine/UserBundle/Resources/views/Default/index.html.twig");
